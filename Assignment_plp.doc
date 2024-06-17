@@ -1,0 +1,671 @@
+#Objective: This assignment aims to familiarize you with the tools and configurations necessary to set up an efficient developer environment for software engineering projects. Completing this assignment will give you the skills required to set up a robust and productive workspace conducive to coding, debugging, version control, and collaboration.
+
+#Tasks:
+
+1.  Select Your Operating System (OS): Choose an operating system that best suits your preferences and project requirements. Download and Install Windows 11. https://www.microsoft.com/software-download/windows11
+
+To download and install Windows 11, follow these steps:
+
+Check Compatibility: Ensure your device meets the minimum system requirements using the PC Health Check app.
+Windows 11 Installation Assistant: Use this tool to upgrade your current PC. Click "Download Now" on the Windows 11 download page, run the tool, and follow the instructions.
+Create Installation Media: For a clean install or reinstall, download the media creation tool to make a bootable USB or DVD.
+Upgrade a Windows 10 PC to Windows 11.
+
+Before you begin, check to see if the following conditions apply to you:
+You have a Windows 10 license.
+Your PC must have Windows 10, version 2004 or higher installed to run Installation Assistant.
+Your PC must have 9 GB of free disk space to download Windows 11.
+
+
+Note: Your PC meets the Windows 11 device specifications for upgrade requirements and supported features. Certain features require additional hardware. We also recommend that you visit your PC’s manufacturer’s website for information about updated drivers and hardware compatibility.
+After you download the Installation Assistant:
+Select Run. You need to be an administrator to run this tool.
+Once the tool confirms the device hardware is compatible, you will be presented with the license terms. Select Accept and Install.
+Once the tool is ready, click the Restart Now button to complete installation on your computer.
+It might take some time to install Windows 11, and your PC will restart a few times. ?Make sure you don’t turn off your PC.
+
+
+Note: Windows 11 Installation Assistant doesn’t run on ARM-based PCs. It’s only supported for PCs using x64 processors. If you need installation media to install Windows 11 on a different PC, see Create Windows 11 Installation Media.Download Now
+
+
+2. Install a Text Editor or Integrated Development Environment (IDE): Select and install a text editor or IDE suitable for your programming languages and workflow. Download and Install Visual Studio Code. https://code.visualstudio.com/Download
+Download:
+
+Go to the Visual Studio Code download page.
+Choose your operating system (Windows, macOS, or Linux).
+ 
+
+Install on Windows:
+
+Run the downloaded installer.
+Follow the setup wizard, accepting the license agreement.
+Choose installation location and options.
+Click "Install" and then "Finish" to launch VS Code.
+Install on macOS:
+
+Open the downloaded .dmg file.
+Drag Visual Studio Code.app to the Applications folder.
+Install on Linux:
+
+Use the appropriate package manager (e.g., sudo apt install code for Ubuntu).
+
+3. Set Up Version Control System: Install Git and configure it on your local machine. Create a GitHub account for hosting your repositories. Initialize a Git repository for your project and make your first commit. https://github.com
+
+Download and Install Git:
+
+Windows: Download from git-scm.com. Run the installer and follow the setup instructions.
+macOS: Use Homebrew: brew install git.
+Linux: Use your package manager, e.g., sudo apt install git for Ubuntu.
+Configure Git:
+Open a terminal and set your name and email:
+Open Google and search for git on windows. Go to http://git-scm.com/. Find a version that is compatible with your operating system. In our case, it is Windows x64. Click on the link. The download will start after you specify the folder. After this, go to the folder with the downloaded file and run it. Choose the installation path and continue. When you proceed to the Select Components, check the Additional icons checkbox. It will simplify the usage in the future. Continue the installation. Leave all the settings offered during the installation as default position up to the final step – Completing the Git Setup Wizard.
+
+Source: How to Install Git and Clone a Repository - QA Madness Software testing company
+STEP:1
+ 
+STEP:2
+ 
+STEP:3  And now, let’s try to clone the repository from Github. For this, go to the folder where you want to save the repositories using Git Bash or open this folder using Windows
+
+Source: How to Install Git and Clone a Repository - QA Madness Software testing company
+ 
+SREP:4   Now, you need to get a link to the repository. Let’s use ours as an example. To find the repository,
+ 
+STEP:5 Select TestProject from the list of repositories.
+ 
+STEP:6 Now, return to the Git Bash window. Type git clone, paste the path to the repository, and press Enter.
+ 
+
+
+
+
+
+
+
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com".
+Create a GitHub Account:
+Go to GitHub and sign up.
+
+ 
+Initialize a Git Repository:
+In your project directory:
+git init
+git add .
+git commit -m "Initial commit"
+Push to GitHub:
+
+Create a new repository on GitHub.
+Link your local repository to GitHub and push:
+git remote add origin https://github.com/yourusername/your-repo.git
+git branch -M main
+git push -u origin main
+
+
+4. Install Necessary Programming Languages and Runtimes: Instal Python from http://wwww.python.org programming language required for your project and install their respective compilers, interpreters, or runtimes. Ensure you have the necessary tools to build and execute your code.
+Sure, here's a step-by-step guide to installing Python and setting up your environment for development.
+
+Step 1: Download and Install Python
+Go to the Python Website:
+Open your web browser and go to the official Python website: Python.org.
+
+Download Python:
+
+Click on the "Downloads" menu.
+The website should automatically suggest the best version for your operating system. Click the "Download Python" button.
+Run the Installer:
+
+Once the download is complete, open the installer.
+Make sure to check the box that says "Add Python to PATH" before you click "Install Now".
+Follow the Installation Steps:
+
+Follow the prompts in the installer to complete the installation.
+Step 2: Verify Installation
+Open a Command Prompt or Terminal:
+
+On Windows: Open Command Prompt (cmd) or PowerShell.
+On macOS/Linux: Open Terminal.
+Check Python Installation:
+
+Type python --version and press Enter. You should see the version of Python that you installed.
+Type pip --version to check that the package manager pip is also installed.
+Step 3: Install Additional Tools and Libraries
+Install Virtual Environment:
+Virtual environments help manage dependencies for different projects.
+
+Run pip install virtualenv to install the virtual environment tool.
+Set Up a Virtual Environment:
+
+Navigate to your project directory.
+Run python -m venv myenv to create a virtual environment named myenv.
+Activate the virtual environment:
+On Windows: myenv\Scripts\activate
+On macOS/Linux: source myenv/bin/activate
+Install Required Packages:
+
+With the virtual environment activated, you can install required packages using pip. For example, to install Flask, run pip install Flask.
+Step 4: Install an IDE or Text Editor
+Download and Install VS Code:
+
+Go to the VS Code website.
+Download and install VS Code for your operating system.
+Set Up Python Extension:
+
+Open VS Code.
+Go to the Extensions view by clicking the square icon in the sidebar or pressing Ctrl+Shift+X.
+Search for "Python" and install the extension by Microsoft.
+Configure VS Code for Python Development:
+
+Open your project folder in VS Code.
+Ensure the Python interpreter is set to the one in your virtual environment. You can select it by clicking on the Python version in the bottom-left corner of VS Code and selecting the appropriate interpreter.
+Step 5: Verify Your Setup
+Create a Simple Python Script:
+
+In your project directory, create a file named hello.py.
+Add the following code:
+python
+Copy code
+print("Hello, World!")
+Run the Script:
+
+In the terminal within VS Code (or your command prompt/terminal), run the script using python hello.py.
+You should see "Hello, World!" printed to the terminal, indicating that your Python environment is set up correctly.
+ 
+5. Install Package Managers: If applicable, install package managers like pip (Python).
+
+Step 1: Ensure pip is Installed with Python
+pip usually comes pre-installed with Python. However, if you need to install it manually, follow these steps:
+
+Check if pip is Installed:
+
+Open a Command Prompt (Windows) or Terminal (macOS/Linux).
+Run the command pip --version.
+If pip is installed, you will see something like pip 21.0.1 from ....
+Install pip Manually:
+If pip is not installed, you can install it using the following method:
+
+Download get-pip.py:
+
+Open your web browser and go to https://bootstrap.pypa.io/get-pip.py.
+Save the file as get-pip.py.
+Run get-pip.py:
+
+Open Command Prompt or Terminal.
+Navigate to the directory where get-pip.py is saved.
+Run the command python get-pip.py.
+Step 2: Verify pip Installation
+Open a Command Prompt or Terminal:
+
+On Windows: Open Command Prompt (cmd) or PowerShell.
+On macOS/Linux: Open Terminal.
+Check pip Version:
+
+Run pip --version to ensure pip is installed and accessible.
+Step 3: Install Virtual Environment Tools (Optional but Recommended)
+Creating a virtual environment for your projects helps manage dependencies separately.
+
+Install virtualenv:
+
+Run the command pip install virtualenv.
+Create a Virtual Environment:
+
+Navigate to your project directory.
+Run python -m venv myenv to create a virtual environment named myenv.
+Activate the Virtual Environment:
+
+On Windows: myenv\Scripts\activate
+On macOS/Linux: source myenv/bin/activate
+Step 4: Install Additional Python Packages
+Install Packages Using pip:
+
+With your virtual environment activated, you can install packages. For example, to install Flask, run pip install Flask.
+Check Installed Packages:
+
+Run pip list to see a list of installed packages and their versions.
+Step 5: Install Other Package Managers (If Needed)
+Depending on your project's requirements, you might need other package managers:
+
+Node.js and npm (JavaScript):
+
+Download and install Node.js from nodejs.org.
+npm (Node Package Manager) comes with Node.js. Verify installation by running npm --version.
+
+6. Configure a Database (MySQL): Download and install MySQL database. https://dev.mysql.com/downloads/windows/installer/5.7.html
+Step 1: Download MySQL
+Go to the MySQL Website:
+Open your web browser and go to the official MySQL website: MySQL Downloads.
+
+Select Your Platform:
+
+Choose the appropriate version for your operating system (Windows, macOS, Linux).
+Download MySQL Installer:
+
+Click the "Download" button for the installer. You can choose either the web or the full installer. The web installer is smaller and downloads necessary components during installation, while the full installer includes all necessary components.
+Step 2: Install MySQL
+On Windows
+Run the Installer:
+
+Once the download is complete, open the installer file.
+Choose Setup Type:
+
+Choose "Custom" or "Developer Default" setup type. "Developer Default" installs MySQL server, MySQL Workbench, MySQL Shell, and other MySQL products.
+Select Products and Features:
+
+Choose the components you need, such as MySQL Server, MySQL Workbench, and MySQL Shell.
+Check Requirements:
+
+The installer checks for any missing requirements. If there are any, follow the prompts to install them.
+Installation Path:
+
+Set the installation path or use the default one.
+Apply Configuration:
+
+Follow the prompts to configure your MySQL server. You can choose the configuration type (Development Machine, Server Machine, Dedicated Machine).
+Set the root password and create any additional user accounts as needed.
+Start MySQL Server:
+
+The installer will prompt you to start the MySQL Server after the installation.
+Finish Installation:
+
+Complete the installation process and open MySQL Workbench to manage your databases.
+ 
+
+ 
+
+
+
+7. Set Up Development Environments and Virtualization (Optional): Consider using virtualization tools like Docker or virtual machines to isolate project dependencies and ensure consistent environments across different machines.
+Step 1: Install Docker
+On Windows
+Download Docker Desktop:
+
+Go to the Docker Desktop for Windows download page.
+Download the installer.
+Run the Installer:
+
+Double-click the downloaded installer and follow the installation steps.
+During installation, ensure you enable the option to use the WSL 2 based engine if prompted.
+Start Docker Desktop:
+
+Once installed, start Docker Desktop from the Start menu.
+Follow any additional prompts to complete the setup.
+Verify Installation:
+
+Open Command Prompt or PowerShell.
+Run docker --version to ensure Docker is installed correctly.
+On macOS
+Download Docker Desktop:
+
+Go to the Docker Desktop for Mac download page.
+Download the installer.
+Run the Installer:
+
+Open the downloaded .dmg file and drag the Docker icon to the Applications folder.
+Start Docker Desktop:
+
+Open Docker Desktop from the Applications folder.
+Follow any additional prompts to complete the setup.
+Verify Installation:
+
+Open Terminal.
+Run docker --version to ensure Docker is installed correctly.
+On Linux
+Update Package Index:
+
+Open Terminal.
+Run sudo apt update (Debian/Ubuntu) or sudo yum update (CentOS/RHEL).
+Install Docker:
+
+On Debian/Ubuntu:
+
+sudo apt install docker.io
+On CentOS/RHEL:
+
+sudo yum install docker
+Start Docker Service:
+
+Start the Docker service:
+
+sudo systemctl start docker
+Enable Docker to Start at Boot:
+sudo systemctl enable docker
+Verify Installation:
+
+Run docker --version to ensure Docker is installed correctly.
+Step 2: Set Up a Dockerized Development Environment
+Create a Dockerfile:
+
+In your project directory, create a file named Dockerfile.
+Define your development environment in the Dockerfile. For example, for a Python application:
+Dockerfile
+FROM python:3.9-slim
+# Set the working directory
+WORKDIR /app
+# Copy the current directory contents into the container
+COPY . /app
+# Install any needed packages specified in requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+# Make port 80 available to the world outside this container
+EXPOSE 80
+# Run app.py when the container launches
+CMD ["python", "app.py"]
+Create a docker-compose.yml File (Optional):
+If you have multiple services (e.g., a web server, a database), you can use Docker Compose.
+In your project directory, create a file named docker-compose.yml.
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: example
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+Build and Run the Docker Container:
+
+Open a terminal and navigate to your project directory.
+Run the following command to build your Docker image:
+
+
+docker build -t myapp .
+Run the container:
+docker run -p 5000:80 myapp
+Use Docker Compose (if applicable):
+
+If you're using Docker Compose, run the following command to build and start your containers:
+docker-compose up
+Verify the Setup:
+
+Open your web browser and go to http://localhost:5000 (or the appropriate port). You should see your application running.
+Step 3: Use Virtual Machines (Alternative)
+If you prefer to use virtual machines, tools like Vagrant can help automate the setup.
+Install VirtualBox:
+Download and install VirtualBox.
+Install Vagrant:
+Download and install Vagrant.
+Create a Vagrantfile:
+In your project directory, create a file named Vagrantfile.
+ruby
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/bionic64"
+  config.vm.network "forwarded_port", guest: 80, host: 8080
+  config.vm.provision "shell", inline: <<-SHELL
+    apt-get update
+    apt-get install -y python3-pip
+    pip3 install flask
+  SHELL
+end
+Start the Virtual Machine:
+Open a terminal and navigate to your project directory.
+Run the following command to start the VM:
+vagrant up
+SSH into the VM
+vagrant ssh
+Your project directory will be synced with /vagrant in the VM.
+
+8.Explore Extensions and Plugins: Explore available extensions, plugins, and add-ons for your chosen text editor or IDE to enhance functionality, such as syntax highlighting, linting, code formatting, and version control integration.
+Python
+
+Name: Python
+Features: Syntax highlighting, IntelliSense, linting, debugging, and Jupyter notebook support.
+Installation: Search for "Python" in the Extensions view (Ctrl+Shift+X) and install the extension by Microsoft.
+Pylance
+
+Name: Pylance
+Features: Fast, feature-rich language support for Python, including type checking and code navigation.
+Installation: Search for "Pylance" in the Extensions view and install it.
+ESLint
+
+Name: ESLint
+Features: Integrates ESLint into VS Code for JavaScript and TypeScript linting.
+Installation: Search for "ESLint" in the Extensions view and install it.
+Prettier - Code Formatter
+
+Name: Prettier - Code Formatter
+Features: Code formatting for JavaScript, TypeScript, HTML, CSS, and more.
+Installation: Search for "Prettier - Code Formatter" in the Extensions view and install it.
+Docker
+
+Name: Docker
+Features: Docker integration, manage containers, images, and compose files directly from VS Code.
+Installation: Search for "Docker" in the Extensions view and install it.
+GitLens
+
+Name: GitLens — Git supercharged
+Features: Enhances the built-in Git capabilities, providing insights into code authorship and history.
+Installation: Search for "GitLens" in the Extensions view and install it.
+Live Server
+
+Name: Live Server
+Features: Launch a local development server with live reload feature for static and dynamic pages.
+Installation: Search for "Live Server" in the Extensions view and install it.
+JetBrains IntelliJ IDEA
+1.Python
+
+Name: Python Community Edition
+Features: Syntax highlighting, code completion, debugging, and project navigation for Python.
+Installation: Go to Preferences > Plugins, search for "Python" and install the plugin.
+CheckStyle-IDEA
+
+Name: CheckStyle-IDEA
+Features: Integrates CheckStyle for Java projects to enforce coding standards.
+Installation: Go to Preferences > Plugins, search for "CheckStyle-IDEA" and install the plugin.
+2.Docker
+
+Name: Docker
+Features: Manage Docker containers, images, and compose files directly from IntelliJ IDEA.
+Installation: Go to Preferences > Plugins, search for "Docker" and install the plugin.
+3.Prettier
+
+Name: Prettier
+Features: Code formatting for JavaScript, TypeScript, HTML, CSS, and more.
+Installation: Go to Preferences > Plugins, search for "Prettier" and install the plugin.
+4.SonarLint
+
+Name: SonarLint
+Features: On-the-fly bug detection and code quality analysis.
+Installation: Go to Preferences > Plugins, search for "SonarLint" and install the plugin.
+5.GitToolBox
+
+Name: GitToolBox
+Features: Enhances Git integration, providing extra Git features and status insights.
+Installation: Go to Preferences > Plugins, search for "GitToolBox" and install the plugin.
+Sublime Text
+6.Package Control
+
+Name: Package Control
+Features: Essential package manager for Sublime Text.
+Installation: Follow the official installation guide.
+7.Anaconda
+
+Name: Anaconda
+Features: Python IDE with code linting, auto-completion, and more.
+Installation: Install via Package Control by searching for "Anaconda".
+8.SublimeLinter
+
+Name: SublimeLinter
+Features: Interactive code linting framework for various languages.
+Installation: Install via Package Control by searching for "SublimeLinter".
+9.GitGutter
+
+Name: GitGutter
+Features: Shows Git diff information in the gutter.
+Installation: Install via Package Control by searching for "GitGutter".
+10.Dockerfile Syntax Highlighting
+
+Name: Dockerfile Syntax Highlighting
+Features: Provides syntax highlighting for Dockerfiles.
+Installation: Install via Package Control by searching for "Dockerfile Syntax Highlighting".
+11.Prettier
+
+Name: JsPrettier
+Features: Code formatting for JavaScript, TypeScript, HTML, CSS, and more.
+Installation: Install via Package Control by searching for "JsPrettier".
+Additional Recommendations
+Version Control Integration:
+
+VS Code: GitLens, Git History.
+IntelliJ IDEA: GitToolBox, Git Integration.
+Sublime Text: GitGutter, Sublime Merge.
+Code Snippets:
+
+VS Code: Various snippet extensions for different languages available in the Extensions view.
+IntelliJ IDEA: Built-in support for templates and snippets.
+Sublime Text: Package Control has multiple snippet packages for different languages.
+
+9. Document Your Setup: Create a comprehensive document outlining the steps you've taken to set up your developer environment. Include any configurations, customizations, or troubleshooting steps encountered during the process.
+
+Creating a comprehensive document for your developer environment setup ensures that the process is repeatable and easily understandable for anyone who needs to set up a similar environment. Here's a detailed example of how you might document your setup:
+
+Developer Environment Setup Documentation
+Table of Contents
+1.Introduction
+2.Installing Python
+3.Installing Package Managers
+4.Installing MySQL
+5.Setting Up Docker
+6.Exploring Extensions and Plugins
+7.Troubleshooting
+8.Conclusion
+Introduction
+This document provides a step-by-step guide to setting up a developer environment, including Python installation, package managers, MySQL setup, Docker configuration, and essential extensions and plugins for Visual Studio Code (VS Code).
+Installing Python
+Step 1: Download and Install Python
+Go to Python's official website.
+Download the latest version suitable for your operating system.
+Run the installer and ensure you check "Add Python to PATH".
+Follow the installation instructions.
+Step 2: Verify Installation
+Open Command Prompt (Windows) or Terminal (macOS/Linux).
+Run python --version to verify the installation.
+Installing Package Managers
+Step 1: Verify pip Installation
+Run pip --version to check if pip is installed.
+If not installed, download get-pip.py from bootstrap.pypa.io/get-pip.py.
+Run python get-pip.py to install pip.
+Step 2: Install Virtualenv
+Run pip install virtualenv to install virtualenv.
+Installing MySQL
+Step 1: Download MySQL
+Go to the MySQL Downloads page.
+Download the installer for your operating system.
+Step 2: Install MySQL
+Run the installer and follow the setup instructions.
+During installation, configure the MySQL server, set the root password, and create any additional user accounts.
+Step 3: Verify Installation
+Open Command Prompt or Terminal.
+Run mysql -u root -p and enter the root password to verify the installation.
+Setting Up Docker
+Step 1: Install Docker
+On Windows
+Download Docker Desktop from Docker's website.
+Run the installer and follow the setup instructions.
+On macOS
+Download Docker Desktop from Docker's website.
+Open the .dmg file and drag Docker to the Applications folder.
+On Linux
+Update the package index: sudo apt update (Debian/Ubuntu) or sudo yum update (CentOS/RHEL).
+Install Docker: sudo apt install docker.io (Debian/Ubuntu) or sudo yum install docker (CentOS/RHEL).
+Start Docker service: sudo systemctl start docker.
+Enable Docker to start at boot: sudo systemctl enable docker.
+Step 2: Verify Docker Installation
+Open Command Prompt or Terminal.
+Run docker --version to verify the installation.
+Step 3: Create and Run Docker Container
+Create a Dockerfile in your project directory.
+Dockerfile
+FROM python:3.9-slim
+WORKDIR /app
+COPY . /app
+RUN pip install --no-cache-dir -r requirements.txt
+EXPOSE 80
+CMD ["python", "app.py"]
+Build the Docker image: docker build -t myapp .
+Run the container: docker run -p 5000:80 myapp
+Step 4: (Optional) Docker Compose
+Create a docker-compose.yml file in your project directory.
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: example
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+Run Docker Compose: docker-compose up
+Exploring Extensions and Plugins
+Visual Studio Code (VS Code)
+Python Extension
+Features: Syntax highlighting, IntelliSense, linting, debugging, Jupyter notebook support.
+Installation: Search for "Python" in the Extensions view (Ctrl+Shift+X) and install the extension by Microsoft.
+Pylance
+Features: Fast, feature-rich language support for Python.
+Installation: Search for "Pylance" in the Extensions view and install it.
+Features: Integrates ESLint into VS Code for JavaScript and TypeScript linting.
+Installation: Search for "ESLint" in the Extensions view and install it.
+Prettier - Code Formatter
+Features: Code formatting for JavaScript, TypeScript, HTML, CSS, and more.
+Installation: Search for "Prettier - Code Formatter" in the Extensions view and install it.
+Docker
+Features: Docker integration to manage containers, images, and compose files directly from VS Code.
+Installation: Search for "Docker" in the Extensions view and install it.
+GitLens
+Features: Enhances Git capabilities, providing insights into code authorship and history.
+Installation: Search for "GitLens" in the Extensions view and install it.
+Live Server
+Features: Launches a local development server with live reload feature for static and dynamic pages.
+Installation: Search for "Live Server" in the Extensions view and install it.
+Troubleshooting
+Common Issues
+Python Path Issues:
+Ensure Python is added to your system PATH during installation.
+Verify by running python --version and pip --version.
+Docker Permission Issues on Linux:
+Add your user to the Docker group: sudo usermod -aG docker $USER.
+Log out and log back in for the changes to take effect.
+MySQL Connection Errors:
+Ensure the MySQL service is running: sudo systemctl start mysql.
+Check firewall settings to ensure port 3306 is open.
+VS Code Extension Not Working:
+Restart VS Code after installing extensions.
+Ensure the correct Python interpreter is selected: Open Command Palette (Ctrl+Shift+P) and type "Python: Select Interpreter".
+Conclusion
+This document outlines the steps to set up a comprehensive development environment, including installing Python, configuring package managers, setting up MySQL, using Docker for containerization, and enhancing your IDE with essential extensions and plugins. Following these steps ensures a consistent and efficient development experience across different machines.
+
+
+#Deliverables:
+
+Document detailing the setup process with step-by-step instructions and screenshots where necessary.
+A GitHub repository containing a sample project initialized with Git and any necessary configuration files (e.g., .gitignore).
+A reflection on the challenges faced during setup and strategies employed to overcome them.
+#Submission: Submit your document and GitHub repository link through the designated platform or email to the instructor by the specified deadline.
+
+#Evaluation Criteria:**
+
+Completeness and accuracy of setup documentation.
+Effectiveness of version control implementation.
+Appropriateness of tools selected for the project requirements.
+Clarity of reflection on challenges and solutions encountered.
+Adherence to submission guidelines and deadlines.
+Note: Feel free to reach out for clarification or assistance with any aspect of the assignment.
